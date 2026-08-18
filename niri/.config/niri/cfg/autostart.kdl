@@ -1,0 +1,14 @@
+// ────────────── Startup Applications ──────────────
+// https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
+
+spawn-at-startup "noctalia"
+spawn-at-startup "pipewire"
+spawn-at-startup "pipewire-pulse"
+spawn-at-startup "wireplumber"
+
+// Исправленная строка: передаем команду целиком через встроенную оболочку shell
+spawn-sh-at-startup "dbus-update-activation-environment --all"
+
+spawn-sh-at-startup "xwayland-satellite"
+
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "DISPLAY" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP=GNOME"

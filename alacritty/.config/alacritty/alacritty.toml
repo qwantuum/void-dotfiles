@@ -1,0 +1,43 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/noctalia.toml"
+]
+
+# Настройки оконного менеджера Alacritty
+
+[window]
+# Размеры внутренних отступов (чтобы текст не прилипал к краям экрана)
+padding = { x = 6, y = 6 }
+opacity = 1
+
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
+
+# Отключаем прозрачность окна (как советует автор, чтобы не портить читаемость текста)
+#opacity = 0.5
+
+# Настройки шрифтов
+[font]
+# Используем установленный JetBrains Mono
+size = 11.5
+builtin_box_drawing = true
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+# Включаем встроенную отрисовку символов (рамок, линий) для бесшовного интерфейса
+

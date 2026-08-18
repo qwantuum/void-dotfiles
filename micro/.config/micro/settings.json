@@ -1,0 +1,4 @@
+{
+  "colorscheme": "noctalia",
+  "lsp.server": "python=pyright-langserver --stdio,lua=lua-language-server"
+}
