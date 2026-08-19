@@ -1,13 +1,13 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
   "logo": {
-    "type": "small"
+    "source": "/home/nazar/Downloads/void2_small.txt",
   },
   "modules": [
+    "title",
+    "separator",
     "os",
-    "kernel",
     "initsystem",
-    "shell",
     "wm",
     "terminal",
     "memory",

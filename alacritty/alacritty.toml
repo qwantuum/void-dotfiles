@@ -8,7 +8,11 @@ import = [
 [window]
 # Размеры внутренних отступов (чтобы текст не прилипал к краям экрана)
 padding = { x = 6, y = 6 }
-opacity = 1
+opacity = 0.5
+
+[env]
+TERM = "xterm-256color"
+COLORTERM = "truecolor"
 
 
 [cursor]

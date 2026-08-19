@@ -10,6 +10,34 @@
         }
     }
 
+// Telegram на 3-й воркспейс в полноэкранном режиме
+window-rule {
+    match app-id="org.telegram.desktop"
+    open-on-workspace "3"
+    open-maximized true
+}
+
+// Firefox на 5-й воркспейс в полноэкранном режиме
+window-rule {
+    match app-id="Firefox"
+    open-on-workspace "5"
+    open-maximized true
+}
+
+// Zed на 4-й воркспейс в полноэкранном режиме
+window-rule {
+    match app-id="dev.zed.Zed"
+    open-on-workspace "4"
+    open-maximized true
+}
+
+
+
+
+
+
+
+
 
 window-rule {
     // Ищем окно по нашему app-id
