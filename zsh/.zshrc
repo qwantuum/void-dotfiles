@@ -1,3 +1,5 @@
+exec fish
+
 fastfetch
 zmodload zsh/nearcolor
 
@@ -18,6 +20,8 @@ export COLORTERM="truecolor"
 bindkey "^[[1;5A" history-beginning-search-backward
 
 alias cd='z'
+alias noctalia-reload='killall noctalia && noctalia --daemon'
+
 
 autoload -Uz compinit && compinit
 

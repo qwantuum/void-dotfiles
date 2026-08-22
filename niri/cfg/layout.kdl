@@ -1,14 +1,24 @@
-    layout {
-        gaps 3 // Gap between windows
-        center-focused-column "never" // Don’t auto-center focused column
+layout {
+    gaps 5 // Gap between windows
+    center-focused-column "never" // Don’t auto-center focused column
 
-        background-color "transparent" // <- needed for noctalia-shell to set wallpaper
+    background-color "transparent" // <- needed for noctalia-shell to set wallpaper
 
-        preset-column-widths {
+    preset-column-widths {
         proportion 0.33333
         proportion 0.5
         proportion 0.66667
-        }
-
-        struts {}
     }
+
+    struts {}
+
+    // Секция включения и настройки теней
+    shadow {
+        on // Включает тени для всех окон
+        softness 8 // Степень размытия тени
+        spread 3 // Насколько далеко тень выходит за границы окна
+        offset x=0 y=4 // Смещение вниз для эффекта объема
+        color "#000000a0" // Цвет тени активного окна (черный с прозрачностью)
+        inactive-color "#00000050" // Цвет тени неактивного окна (более прозрачный)
+    }
+}

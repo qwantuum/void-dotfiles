@@ -1,12 +1,12 @@
     window-rule {
-        geometry-corner-radius 3 // Set every window radius to 20
+        geometry-corner-radius 20 // Set every window radius to 20
         clip-to-geometry true
     }
 
     window-rule {
         background-effect {
           blur true
-          xray true
+          xray false
         }
     }
 
@@ -19,7 +19,7 @@ window-rule {
 
 // Firefox на 5-й воркспейс в полноэкранном режиме
 window-rule {
-    match app-id="Firefox"
+    match app-id="helium"
     open-on-workspace "5"
     open-maximized true
 }
